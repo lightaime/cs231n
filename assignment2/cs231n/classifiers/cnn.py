@@ -108,7 +108,7 @@ class ThreeLayerConvNet(object):
     loss, dout = softmax_loss(scores, y)
 
     # Add regularization
-    loss += self.reg * 0.5 * (np.sum(self.params['W1'] ** 2) + np.sum(self.params['W2'] ** 2) + np.sum(self.params['W1'] ** 2))
+    loss += self.reg * 0.5 * (np.sum(self.params['W1'] ** 2) + np.sum(self.params['W2'] ** 2) + np.sum(self.params['W3'] ** 2))
 
     dX3, grads['W3'], grads['b3'] = affine_backward(dout, cache_forward_3)
     dX2 = relu_backward(dX3, cache_relu_2)
