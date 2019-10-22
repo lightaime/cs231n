@@ -43,4 +43,4 @@ tornado==4.3
 traitlets==4.0.0
 wsgiref==0.1.2
 jupyter==1.0.0
-pillow==3.1.0
+pillow==6.2.0
