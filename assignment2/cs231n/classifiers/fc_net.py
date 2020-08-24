@@ -183,13 +183,13 @@ class FullyConnectedNet(object):
     layer_input_dim = input_dim
     for i, hd in enumerate(hidden_dims):
         self.params['W%d'%(i+1)] = weight_scale * np.random.randn(layer_input_dim, hd)
-        self.params['b%d'%(i+1)] = weight_scale * np.zeros(hd)
+        self.params['b%d'%(i+1)] = np.zeros(hd)
         if self.use_batchnorm:
             self.params['gamma%d'%(i+1)] = np.ones(hd)
             self.params['beta%d'%(i+1)] = np.zeros(hd)
         layer_input_dim = hd
     self.params['W%d'%(self.num_layers)] = weight_scale * np.random.randn(layer_input_dim, num_classes)
-    self.params['b%d'%(self.num_layers)] = weight_scale * np.zeros(num_classes)
+    self.params['b%d'%(self.num_layers)] = np.zeros(num_classes)
     #pass
     ############################################################################
     #                             END OF YOUR CODE                             #
