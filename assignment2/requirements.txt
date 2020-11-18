@@ -25,7 +25,7 @@ matplotlib==1.5.0
 mistune==0.7.1
 nbconvert==4.1.0
 nbformat==4.0.1
-notebook==4.0.6
+notebook==6.1.5
 numpy==1.10.4
 path.py==8.1.2
 pexpect==4.0.1
