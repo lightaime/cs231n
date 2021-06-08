@@ -1,7 +1,7 @@
 Cython==0.23.4
 Jinja2==2.8
 MarkupSafe==0.23
-Pillow==3.0.0
+Pillow==8.2.0
 Pygments==2.0.2
 appnope==0.1.0
 argparse==1.2.1
