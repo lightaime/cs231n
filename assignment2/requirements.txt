@@ -26,7 +26,7 @@ mistune==0.7.1
 nbconvert==4.1.0
 nbformat==4.0.1
 notebook==4.0.6
-numpy==1.10.4
+numpy==1.22.0
 path.py==8.1.2
 pexpect==4.0.1
 pickleshare==0.5
